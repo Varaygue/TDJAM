@@ -18400,7 +18400,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 999653372}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1281312552}
+        m_TargetAssemblyTypeName: SC_MenuHandle, Assembly-CSharp
+        m_MethodName: OpenUnits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &999653372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23247,6 +23259,7 @@ GameObject:
   - component: {fileID: 1281312549}
   - component: {fileID: 1281312548}
   - component: {fileID: 1281312552}
+  - component: {fileID: 1281312553}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -23351,6 +23364,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861b30ab9ce0b2d43bf2f70aacf61c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitsMenu: {fileID: 974956027}
+  buttonPress: {fileID: 1281312553}
+--- !u!114 &1281312553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281312547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a1e712fbd6c2f4db318d71c72199ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEventName: event:/ButttonPress
 --- !u!1001 &1282756381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38263,7 +38291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089450550}
   - component: {fileID: 2089450549}
-  - component: {fileID: 2089450548}
+  - component: {fileID: 2089450551}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -38271,14 +38299,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2089450548
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089450547}
-  m_Enabled: 1
 --- !u!20 &2089450549
 Camera:
   m_ObjectHideFlags: 0
@@ -38345,6 +38365,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &2089450551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089450547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &2089646186
 PrefabInstance:
   m_ObjectHideFlags: 0
