@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8114309587527899732
+--- !u!114 &-8219064045205541479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/SFX.bank
+  m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  Path: ../../Documents/FMOD Studio/JamHistoryQV/Build/Desktop/SFX.bank
-  Name: Desktop/SFX
+  Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/SFX.bank
+  Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638426012301142029
+  lastModified: 638426063173224268
   FileSizes: []
   Exists: 1
---- !u!114 &-6997840979115513830
+--- !u!114 &-4390944097470318900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,60 +28,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/BGM.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../../Documents/FMOD Studio/JamHistoryQV/Build/Desktop/BGM.bank
-  Name: Desktop/BGM
-  StudioPath: bank:/BGM
-  lastModified: 638425974139880495
-  FileSizes: []
-  Exists: 1
---- !u!114 &-2488990397710363662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ButtonUnpress
-  m_EditorClassIdentifier: 
-  Path: event:/ButtonUnpress
-  Guid:
-    Data1: 1371417821
-    Data2: 1103231796
-    Data3: -1600584551
-    Data4: 1029484474
-  Banks:
-  - {fileID: -8114309587527899732}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 214
---- !u!114 &-370673710162753715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Documents/FMOD Studio/JamHistoryQV/Build/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
+  Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638426012300938755
+  lastModified: 638426063172896815
   FileSizes:
   - Name: 
-    Value: 894
+    Value: 856
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -96,21 +51,20 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -370673710162753715}
-  - {fileID: 8517187075829646769}
-  - {fileID: -6997840979115513830}
-  - {fileID: -8114309587527899732}
+  - {fileID: -4390944097470318900}
+  - {fileID: 8818501066428683778}
+  - {fileID: -8219064045205541479}
   EditorEvents:
-  - {fileID: 5204155655176144775}
-  - {fileID: -2488990397710363662}
+  - {fileID: 7965640993119892821}
+  - {fileID: 382307737299667823}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8517187075829646769}
+  - {fileID: 8818501066428683778}
   StringsBanks:
-  - {fileID: -370673710162753715}
-  cacheTime: 638426012301142029
+  - {fileID: -4390944097470318900}
+  cacheTime: 638426063173224268
   cacheVersion: 131608
---- !u!114 &5204155655176144775
+--- !u!114 &382307737299667823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,16 +74,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ButttonPress
+  m_Name: event:/ButtonUnpress
   m_EditorClassIdentifier: 
-  Path: event:/ButttonPress
+  Path: event:/ButtonUnpress
   Guid:
-    Data1: -1241365342
-    Data2: 1319558396
-    Data3: 1555645073
-    Data4: 43687881
+    Data1: 531759103
+    Data2: 1253738562
+    Data3: -592874622
+    Data4: 770185554
   Banks:
-  - {fileID: -8114309587527899732}
+  - {fileID: -8219064045205541479}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 214
+--- !u!114 &7965640993119892821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ButtonPress
+  m_EditorClassIdentifier: 
+  Path: event:/ButtonPress
+  Guid:
+    Data1: 1938237686
+    Data2: 1147618236
+    Data3: 1270952588
+    Data4: 266833827
+  Banks:
+  - {fileID: -8219064045205541479}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -137,7 +118,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 185
---- !u!114 &8517187075829646769
+--- !u!114 &8818501066428683778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,11 +128,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../Documents/FMOD Studio/JamHistoryQV/Build/Desktop/Master.bank
-  Name: Desktop/Master
+  Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.bank
+  Name: Master
   StudioPath: bank:/Master
-  lastModified: 638426012300918822
+  lastModified: 638426063172872194
   FileSizes: []
   Exists: 1

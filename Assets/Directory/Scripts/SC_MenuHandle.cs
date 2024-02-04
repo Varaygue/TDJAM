@@ -8,7 +8,7 @@ public class SC_MenuHandle : MonoBehaviour
     public FmodSound buttonPress;
     public void OpenUnits()
     {
-        buttonPress.Play();
+       // buttonPress.Play();
         unitsMenu.SetActive(true);
 
     }
