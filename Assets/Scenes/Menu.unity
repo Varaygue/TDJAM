@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 225634617}
   - component: {fileID: 225634616}
   - component: {fileID: 225634615}
+  - component: {fileID: 225634620}
+  - component: {fileID: 225634621}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -156,6 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 
+  buttonPress: {fileID: 225634620}
+  MenuTheme: {fileID: 225634621}
 --- !u!114 &225634616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +245,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &225634620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225634614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a1e712fbd6c2f4db318d71c72199ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEventName: event:/ButtonPress
+--- !u!114 &225634621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225634614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a1e712fbd6c2f4db318d71c72199ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEventName: event:/MenuTheme
 --- !u!1 &530634906
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,7 +979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437572219}
   - component: {fileID: 1437572218}
-  - component: {fileID: 1437572217}
+  - component: {fileID: 1437572220}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -957,14 +987,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1437572217
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437572216}
-  m_Enabled: 1
 --- !u!20 &1437572218
 Camera:
   m_ObjectHideFlags: 0
@@ -1031,6 +1053,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1437572220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437572216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1506987915
 GameObject:
   m_ObjectHideFlags: 0

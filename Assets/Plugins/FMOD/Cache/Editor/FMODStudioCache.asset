@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638426063173224268
+  lastModified: 638426753058947259
   FileSizes: []
   Exists: 1
 --- !u!114 &-4390944097470318900
@@ -33,11 +33,65 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638426063172896815
+  lastModified: 638426764027877257
   FileSizes:
   - Name: 
-    Value: 856
+    Value: 1078
   Exists: 1
+--- !u!114 &-3422162209931874147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MenuTheme
+  m_EditorClassIdentifier: 
+  Path: event:/MenuTheme
+  Guid:
+    Data1: 249032153
+    Data2: 1120625289
+    Data3: 1702093730
+    Data4: 1760095618
+  Banks:
+  - {fileID: 5238282729591498128}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22285
+--- !u!114 &-3356213713528966469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameTheme
+  m_EditorClassIdentifier: 
+  Path: event:/GameTheme
+  Guid:
+    Data1: 1457608922
+    Data2: 1085859304
+    Data3: 1738039468
+    Data4: -2025643952
+  Banks:
+  - {fileID: 5238282729591498128}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 108923
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,16 +108,48 @@ MonoBehaviour:
   - {fileID: -4390944097470318900}
   - {fileID: 8818501066428683778}
   - {fileID: -8219064045205541479}
+  - {fileID: 5238282729591498128}
   EditorEvents:
   - {fileID: 7965640993119892821}
   - {fileID: 382307737299667823}
+  - {fileID: 758283143357102802}
+  - {fileID: 106188175668684408}
+  - {fileID: -3422162209931874147}
+  - {fileID: -3356213713528966469}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8818501066428683778}
   StringsBanks:
   - {fileID: -4390944097470318900}
-  cacheTime: 638426063173224268
+  cacheTime: 638426764044815092
   cacheVersion: 131608
+--- !u!114 &106188175668684408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AlliedUnitDeath
+  m_EditorClassIdentifier: 
+  Path: event:/AlliedUnitDeath
+  Guid:
+    Data1: -1358375543
+    Data2: 1216416758
+    Data3: -87764330
+    Data4: 2141116087
+  Banks:
+  - {fileID: -8219064045205541479}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1714
 --- !u!114 &382307737299667823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +177,51 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 214
+--- !u!114 &758283143357102802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AlliedUnitAppear
+  m_EditorClassIdentifier: 
+  Path: event:/AlliedUnitAppear
+  Guid:
+    Data1: 1741841247
+    Data2: 1150899532
+    Data3: -31697996
+    Data4: -927290867
+  Banks:
+  - {fileID: -8219064045205541479}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1714
+--- !u!114 &5238282729591498128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/BGM.bank
+  m_EditorClassIdentifier: 
+  Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/BGM.bank
+  Name: BGM
+  StudioPath: bank:/BGM
+  lastModified: 638426764044815092
+  FileSizes: []
+  Exists: 1
 --- !u!114 &7965640993119892821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +264,6 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638426063172872194
+  lastModified: 638426764027857317
   FileSizes: []
   Exists: 1

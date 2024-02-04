@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b2b4932d-8993-410a-b415-811da7ca9481}">
+		<property name="assetPath">
+			<value>HistoryJamMainMenu.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>22.285714285714285</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5e16f4c7-3d4a-4caf-a4d6-963d5d6d32dd}</destination>
+		</relationship>
+	</object>
+</objects>

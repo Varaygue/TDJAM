@@ -10,6 +10,12 @@ public class SC_MenuHandle : MonoBehaviour
     public GameObject unitsButton;
     public GameObject buildingsButton;
     public FmodSound buttonPress;
+    public FmodSound GameTheme;
+
+    public void Start()
+    {
+        GameTheme.Play(); 
+    }
     public void OpenUnits()
     {
         returnButton.SetActive(true);
