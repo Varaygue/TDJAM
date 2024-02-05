@@ -9,8 +9,8 @@ public class SC_EnemyBehaviour : MonoBehaviour
     public float enemyHP = 3;
     public Animator enemyAnim;
     public float deathTimer = 1;
-    public float animationReset =1;
-    public ResourcesManager resourcesScript;
+    public float animationReset =0.5f;
+    public GameObject GameManager;
     public bool enemyDeath;
     // Start is called before the first frame update
     void Start()
@@ -25,10 +25,9 @@ public class SC_EnemyBehaviour : MonoBehaviour
         
         if(enemyHP==0&&!enemyDeath)
         {
-            AddCoin();
             enemyDeath=true;
         }
-        if(enemyHP==0)
+        if(enemyHP<=0)
         {
             EnemyDeath();
         }
@@ -37,19 +36,13 @@ public class SC_EnemyBehaviour : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if(animationReset<=0)
-        {
-            enemyAnim.ResetTrigger("EnemyHit");
-        }
     }
 
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Arrow")&&!enemyDeath)
         {
-            enemyAnim.SetTrigger("EnemyHit");
             enemyHP = enemyHP-1;
-            animationReset -= Time.deltaTime;
         }
     }
 
@@ -57,10 +50,5 @@ public class SC_EnemyBehaviour : MonoBehaviour
     {
         movementSpeed=0;
         deathTimer -= Time.deltaTime;
-    }
-
-    public void AddCoin()
-    {
-        resourcesScript.goldAmount = resourcesScript.goldAmount+25;
     }
 }

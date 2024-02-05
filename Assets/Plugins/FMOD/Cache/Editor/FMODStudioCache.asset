@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638426753058947259
+  lastModified: 638426757073046985
   FileSizes: []
   Exists: 1
 --- !u!114 &-4390944097470318900
@@ -33,7 +33,7 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638426764027877257
+  lastModified: 638426800201598546
   FileSizes:
   - Name: 
     Value: 1078
@@ -121,7 +121,7 @@ MonoBehaviour:
   - {fileID: 8818501066428683778}
   StringsBanks:
   - {fileID: -4390944097470318900}
-  cacheTime: 638426764044815092
+  cacheTime: 638426800201598546
   cacheVersion: 131608
 --- !u!114 &106188175668684408
 MonoBehaviour:
@@ -219,7 +219,7 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638426764044815092
+  lastModified: 638426800201548670
   FileSizes: []
   Exists: 1
 --- !u!114 &7965640993119892821
@@ -264,6 +264,6 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638426764027857317
+  lastModified: 638426757073027035
   FileSizes: []
   Exists: 1

@@ -10,13 +10,6 @@ public class ResourcesManager : MonoBehaviour
     public TMP_Text goldDisplay;
     public int woodAmount;
     public TMP_Text woodDisplay;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        goldAmount = 0;
-        woodAmount  = 0;
-    }
     void Update()
     {
         goldDisplay.text = goldAmount.ToString();
