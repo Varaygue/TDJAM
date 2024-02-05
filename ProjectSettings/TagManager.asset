@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Tile
   - Farm
+  - GM
   layers:
   - Default
   - TransparentFX

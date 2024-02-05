@@ -33,6 +33,7 @@ public class SC_SpawnUnits : MonoBehaviour
                     Vector3 spawnPosition = new Vector3(tileCenter.x, yPosition, tileCenter.z);
                     Instantiate(archerPrefab, spawnPosition, Quaternion.identity);
                     resourcesManager.goldAmount = resourcesManager.goldAmount-25;
+                    archerSelected=false;
                     }
                     else if(resourcesManager.goldAmount>=25 && tileUsage.tileUsed)
                     {
@@ -61,6 +62,7 @@ public class SC_SpawnUnits : MonoBehaviour
                     Vector3 spawnPosition = new Vector3(tileCenter.x, yPosition, tileCenter.z);
                     Instantiate(farmPrefab, spawnPosition, Quaternion.identity);
                     resourcesManager.goldAmount = resourcesManager.goldAmount-25;
+                    farmSelected=false;
                     }
                     else if(resourcesManager.goldAmount>=25 && tileUsage.tileUsed)
                     {
@@ -78,5 +80,9 @@ public class SC_SpawnUnits : MonoBehaviour
     public void FarmSelection()
     {
         farmSelected=true;
+    }
+    public void ArcherSelection()
+    {
+        archerSelected=true;
     }
 }

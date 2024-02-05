@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2359428066573249661}
   - component: {fileID: 4371359778597112110}
   - component: {fileID: 3936311192878991361}
+  - component: {fileID: 4986664160718642634}
   m_Layer: 0
   m_Name: Farm
   m_TagString: Farm
@@ -105,3 +106,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4986664160718642634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836841278345716554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c439c09ccead6b044badd1dc129d1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCountdown: 5
+  resourcesManager: {fileID: 7749386822275732072, guid: 36dfc2ed2d43ffb4c98df17e5af741aa, type: 3}
