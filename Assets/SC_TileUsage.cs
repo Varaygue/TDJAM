@@ -17,5 +17,9 @@ public class SC_TileUsage : MonoBehaviour
         {
             tileUsed=true;
         }
+        else if(other.CompareTag("Farm"))
+        {
+            tileUsed=true;
+        }
     }
 }
