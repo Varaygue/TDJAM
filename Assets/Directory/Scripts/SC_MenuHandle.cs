@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SC_MenuHandle : MonoBehaviour
 {
@@ -38,5 +39,14 @@ public class SC_MenuHandle : MonoBehaviour
         returnButton.SetActive(false);
         buildingsButton.SetActive(true);
         unitsButton.SetActive(true);
+    }
+
+    public void RetryButton()
+    {
+        SceneManager.LoadScene("SC_Test");
+    }
+    public void QuitButton()
+    {
+        Application.Quit();
     }
 }

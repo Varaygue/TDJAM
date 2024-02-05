@@ -119,4 +119,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldCountdown: 5
-  resourcesManager: {fileID: 7749386822275732072, guid: 36dfc2ed2d43ffb4c98df17e5af741aa, type: 3}

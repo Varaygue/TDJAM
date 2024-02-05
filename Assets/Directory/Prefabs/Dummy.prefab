@@ -123,11 +123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.25
-  enemyHP: 3
+  enemyHP: 5
   enemyAnim: {fileID: 2110126510221353575}
   deathTimer: 1
   animationReset: 1
-  resourcesScript: {fileID: 0}
   GameManager: {fileID: 6265187347595094891, guid: 36dfc2ed2d43ffb4c98df17e5af741aa, type: 3}
   enemyDeath: 0
 --- !u!95 &2110126510221353575
