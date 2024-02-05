@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4371359778597112110}
   - component: {fileID: 3936311192878991361}
   - component: {fileID: 4986664160718642634}
+  - component: {fileID: 5133868456683417677}
   m_Layer: 0
   m_Name: Farm
   m_TagString: Farm
@@ -119,3 +120,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldCountdown: 5
+  GoldGain: {fileID: 5133868456683417677}
+--- !u!114 &5133868456683417677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836841278345716554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a1e712fbd6c2f4db318d71c72199ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEventName: event:/GoldGain

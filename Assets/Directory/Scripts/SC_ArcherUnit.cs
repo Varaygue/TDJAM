@@ -6,10 +6,11 @@ public class SC_ArcherUnit : MonoBehaviour
 {
     public float fireCountdown = 3;
     public GameObject arrowProjectile;
+    public FmodSound Spawn;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Spawn.Play();
     }
 
     // Update is called once per frame

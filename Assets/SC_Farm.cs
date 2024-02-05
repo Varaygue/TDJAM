@@ -6,6 +6,7 @@ public class SC_Farm : MonoBehaviour
 {
     public float goldCountdown = 5;
     private ResourcesManager resourcesManager;
+    public FmodSound GoldGain;
 
     // Update is called once per frame
     void Start()
@@ -19,6 +20,7 @@ public class SC_Farm : MonoBehaviour
         if(goldCountdown<=0)
         {
             resourcesManager.goldAmount = resourcesManager.goldAmount+25;
+            GoldGain.Play();
             goldCountdown=5;
         }
     }

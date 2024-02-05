@@ -11,6 +11,7 @@ public class SC_MenuHandle : MonoBehaviour
     public GameObject unitsButton;
     public GameObject buildingsButton;
     public FmodSound buttonPress;
+    public FmodSound buttonUnpress;
     public FmodSound GameTheme;
 
     public void Start()
@@ -19,6 +20,7 @@ public class SC_MenuHandle : MonoBehaviour
     }
     public void OpenUnits()
     {
+        buttonPress.Play();
         returnButton.SetActive(true);
         unitsMenu.SetActive(true);
         buildingsButton.SetActive(false);
@@ -26,6 +28,7 @@ public class SC_MenuHandle : MonoBehaviour
     }
     public void OpenBuildings()
     {
+        buttonPress.Play();
         returnButton.SetActive(true);
         buildingsMenu.SetActive(true);
         buildingsButton.SetActive(false);
@@ -34,6 +37,7 @@ public class SC_MenuHandle : MonoBehaviour
 
     public void ReturnButton()
     {
+        buttonUnpress.Play();
         unitsMenu.SetActive(false);
         buildingsMenu.SetActive(false);
         returnButton.SetActive(false);
@@ -43,6 +47,7 @@ public class SC_MenuHandle : MonoBehaviour
 
     public void RetryButton()
     {
+        buttonPress.Play();
         SceneManager.LoadScene("SC_Test");
     }
     public void QuitButton()

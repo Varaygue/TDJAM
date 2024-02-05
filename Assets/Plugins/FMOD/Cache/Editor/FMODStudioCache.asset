@@ -15,9 +15,36 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638426757073046985
+  lastModified: 638427015734102450
   FileSizes: []
   Exists: 1
+--- !u!114 &-5447530366611913080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GoldGain
+  m_EditorClassIdentifier: 
+  Path: event:/GoldGain
+  Guid:
+    Data1: 1693941000
+    Data2: 1138873711
+    Data3: -1511488079
+    Data4: 845137409
+  Banks:
+  - {fileID: -8219064045205541479}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4390944097470318900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,10 +60,10 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638426800201598546
+  lastModified: 638427015733486014
   FileSizes:
   - Name: 
-    Value: 1078
+    Value: 1128
   Exists: 1
 --- !u!114 &-3422162209931874147
 MonoBehaviour:
@@ -116,12 +143,13 @@ MonoBehaviour:
   - {fileID: 106188175668684408}
   - {fileID: -3422162209931874147}
   - {fileID: -3356213713528966469}
+  - {fileID: -5447530366611913080}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8818501066428683778}
   StringsBanks:
   - {fileID: -4390944097470318900}
-  cacheTime: 638426800201598546
+  cacheTime: 638427015734102450
   cacheVersion: 131608
 --- !u!114 &106188175668684408
 MonoBehaviour:
@@ -219,7 +247,7 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638426800201548670
+  lastModified: 638426764044815092
   FileSizes: []
   Exists: 1
 --- !u!114 &7965640993119892821
@@ -264,6 +292,6 @@ MonoBehaviour:
   Path: TDJAM Fmod/TDJAM fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638426757073027035
+  lastModified: 638427015733476049
   FileSizes: []
   Exists: 1

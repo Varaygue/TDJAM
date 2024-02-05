@@ -23999,6 +23999,7 @@ GameObject:
   - component: {fileID: 1281312548}
   - component: {fileID: 1281312552}
   - component: {fileID: 1281312553}
+  - component: {fileID: 1281312555}
   - component: {fileID: 1281312554}
   m_Layer: 5
   m_Name: Canvas
@@ -24112,6 +24113,7 @@ MonoBehaviour:
   unitsButton: {fileID: 999653369}
   buildingsButton: {fileID: 1530774622}
   buttonPress: {fileID: 1281312553}
+  buttonUnpress: {fileID: 1281312555}
   GameTheme: {fileID: 1281312554}
 --- !u!114 &1281312553
 MonoBehaviour:
@@ -24139,6 +24141,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fmodEventName: event:/GameTheme
+--- !u!114 &1281312555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281312547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a1e712fbd6c2f4db318d71c72199ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEventName: event:/ButtonUnpress
 --- !u!1001 &1282756381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30398,6 +30413,7 @@ GameObject:
   - component: {fileID: 1647720186}
   - component: {fileID: 1647720185}
   - component: {fileID: 1647720184}
+  - component: {fileID: 1647720189}
   m_Layer: 0
   m_Name: DefeatZone
   m_TagString: Untagged
@@ -30418,6 +30434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeatScreen: {fileID: 1982517287}
+  Defeat: {fileID: 1647720189}
 --- !u!65 &1647720185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30504,6 +30521,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1647720189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647720183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a1e712fbd6c2f4db318d71c72199ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEventName: event:/AlliedUnitDeath
 --- !u!1001 &1650316981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30935,7 +30965,6 @@ GameObject:
   - component: {fileID: 1680649503}
   - component: {fileID: 1680649505}
   - component: {fileID: 1680649504}
-  - component: {fileID: 1680649506}
   - component: {fileID: 1680649507}
   m_Layer: 5
   m_Name: ArcherButton
@@ -31002,19 +31031,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680649502}
   m_CullTransparentMesh: 1
---- !u!114 &1680649506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680649502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a1e712fbd6c2f4db318d71c72199ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fmodEventName: 
 --- !u!114 &1680649507
 MonoBehaviour:
   m_ObjectHideFlags: 0
